@@ -1,0 +1,90 @@
+.hero {
+  position: relative;
+
+  /* Height capping — keeps hero from filling the whole viewport */
+  min-height: 420px;
+  height: 55vh;
+  max-height: 520px;
+
+  /* Background image (contains cup + beans on the right) */
+  background-image: url('/assets/coffee-beans-hero.jpg');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  padding: 4rem 6rem;
+  color: white;
+
+  overflow: hidden;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.hero__subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #d4d4d4;
+  margin-bottom: 0.5rem;
+}
+
+.hero__title {
+  font-size: 5.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #e8c39e;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.hero__btn {
+  background: #ffffff;
+  color: #1a1a1a;
+  border-radius: 30px;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hero__btn:hover {
+  background: #f0e6d6;
+  transform: translateY(-2px);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 3rem 3rem;
+    height: 50vh;
+  }
+  .hero__title {
+    font-size: 4rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1.5rem;
+    height: auto;
+    min-height: 380px;
+    background-position: 70% center;
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+  .hero__subtitle {
+    font-size: 1rem;
+    letter-spacing: 4px;
+  }
+}

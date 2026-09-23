@@ -1,0 +1,22 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --Blanched-Almond: #eacdbd;
+  --dark: #1a1a1a;
+  --brown: #4a2c2a;
+  --accent: #c8956d;
+  --text-dark: #2b1d1a;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: var(--Blanched-Almond);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+
+a { text-decoration: none; color: inherit; }
+
+button { cursor: pointer; border: none; font-family: inherit; }
